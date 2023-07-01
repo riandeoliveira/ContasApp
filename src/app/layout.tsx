@@ -8,12 +8,12 @@ type RootLayoutProps = {
 };
 
 export const metadata: Metadata = {
-  authors: [{ name: "Rian Oliveira", url: "https://github.com/riandeoliveira" }],
+  authors: [
+    { name: "Rian Oliveira", url: "https://github.com/riandeoliveira" },
+  ],
   description: "Meu app de contas.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
-  keywords: [
-    "react"
-  ],
+  keywords: ["react"],
   themeColor: [{ color: "#ffffff", media: "(prefers-color-scheme: dark)" }],
   title: "Contas App",
 };
@@ -27,9 +27,7 @@ const roboto = Roboto({
 const RootLayout = ({ children }: RootLayoutProps): JSX.Element => {
   return (
     <html lang="pt-BR">
-      <body className={roboto.className}>
-        {children}
-      </body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 };
