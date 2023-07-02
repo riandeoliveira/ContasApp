@@ -7,6 +7,6 @@ export type UserType = {
 };
 
 export type BillType = {
-  name: string
+  name: string;
   amount: number;
-}
+};
