@@ -1,11 +1,6 @@
 import { UserType } from "types";
 
 export namespace State {
-  export type Counter = {
-    value: number;
-    increment: () => void;
-  };
-
   export type User = {
     user: Omit<UserType, "password">;
 

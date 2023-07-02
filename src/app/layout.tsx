@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { ReactNode } from "react";
-import "styles/global.css";
+import "styles/_global.scss";
 
 type RootLayoutProps = {
   children: ReactNode;

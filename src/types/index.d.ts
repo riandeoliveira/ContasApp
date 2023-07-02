@@ -6,14 +6,7 @@ export type UserType = {
   authenticated: boolean;
 };
 
-export type InstallmentType = {
-  price: string;
-  installment: string;
-};
-
 export type BillType = {
-  account_name: string;
-  purchase_amount: string;
-  installments_quantity: number;
-  installments_list: InstallmentType[];
-};
+  name: string
+  amount: number;
+}

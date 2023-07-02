@@ -1,48 +1,44 @@
 "use client";
 
-import { ThemeProvider, createTheme } from "@mui/material";
-import { green } from "@mui/material/colors";
-import { BillsToPay } from "components/BillsToPay";
-import { Header } from "components/Header";
-import { NextPage } from "next";
-
-const theme = createTheme({
-  components: {
-    MuiFab: {
-      defaultProps: {
-        sx: {
-          backgroundColor: green[500],
-          "&:hover": { backgroundColor: green[800] },
-        },
-      },
-    },
-    MuiTab: {
-      defaultProps: {
-        sx: {
-          flex: 1,
-          maxWidth: "100%",
-        },
-      },
-    },
-    MuiTabs: {},
-    MuiTableCell: {
-      defaultProps: {
-        sx: {
-          padding: "8px",
-        },
-      },
-    },
-  },
-});
+import { Add as AddIcon } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
+import { BillCard } from "components/BillCard";
+import { Navbar } from "components/Navbar";
+import { TableHeader } from "components/TableHeader";
+import type { NextPage } from "next";
+import styles from "./styles.module.scss";
 
 const Home: NextPage = (): JSX.Element => {
   return (
-    <ThemeProvider theme={theme}>
-      <Header />
-      <main>
-        <BillsToPay />
+    <div className={styles.page}>
+      <h1 className={styles.title}>Contas a Pagar</h1>
+      <TableHeader columnLabels={["Nome", "Valor total", "Opções"]} />
+      <main className={styles.main}>
+        <BillCard name="Boticário" amount={249.99} />
+        <BillCard name="Magazine Luiza" amount={899.99} />
+        <BillCard name="Cesuca" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mercado Pago" amount={609.99} />
+        <BillCard name="Mega Oferta do Supermercado Rissul" amount={609.99} />
       </main>
-    </ThemeProvider>
+      <Navbar />
+      <IconButton className={styles.add_bill_button}>
+        <AddIcon />
+      </IconButton>
+    </div>
   );
 };
 
