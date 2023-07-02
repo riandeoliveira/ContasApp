@@ -22,7 +22,7 @@ export const BillCard = ({ name, amount }: BillCardProps): JSX.Element => {
         </div>
         <div className={styles.option}>
           <IconButton>
-            <OpenInNewIcon />
+            <OpenInNewIcon className={styles.open_in_new} />
           </IconButton>
         </div>
       </div>
