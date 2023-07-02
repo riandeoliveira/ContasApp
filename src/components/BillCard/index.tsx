@@ -1,6 +1,6 @@
 import {
   AttachMoney as AttachMoneyIcon,
-  Delete as DeleteIcon,
+  OpenInNew as OpenInNewIcon,
 } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import { BillType } from "types";
@@ -22,7 +22,7 @@ export const BillCard = ({ name, amount }: BillCardProps): JSX.Element => {
         </div>
         <div className={styles.option}>
           <IconButton>
-            <DeleteIcon className={styles.delete} />
+            <OpenInNewIcon />
           </IconButton>
         </div>
       </div>
