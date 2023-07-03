@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import "./styles/_global.scss";
+import "../../styles/_global.scss";
 
 useHead({
   htmlAttrs: {
@@ -42,7 +42,9 @@ useHead({
       <BillCard name="Mega Oferta do Supermercado Rissul" :amount="609.99" />
     </main>
     <Navbar />
-    <q-btn flat round icon="add" title="Adicionar nova conta" class="add-bill-button" />
+    <NuxtLink to="/contas-a-pagar/cadastro">
+      <q-btn flat round icon="add" title="Adicionar nova conta" class="add-bill-button" />
+    </NuxtLink>
   </div>
 </template>
 
