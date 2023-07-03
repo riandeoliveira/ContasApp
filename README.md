@@ -29,7 +29,8 @@
 <br />
 
 <div>
-  <img src="https://skillicons.dev/icons?i=react" width="64" /> &nbsp;
+  <img src="https://skillicons.dev/icons?i=vue" width="64" /> &nbsp;
+  <img src="https://skillicons.dev/icons?i=nuxtjs" width="64" /> &nbsp;
 </div>
 
 <br />
