@@ -15,10 +15,10 @@ defineProps<Props>();
     <span class="label">{{ toBRL(amount) }}</span>
     <div class="options">
       <div class="option">
-        <q-btn flat round icon="attach_money" title="Pagar conta" class="attach-money" />
+        <QBtn flat round icon="attach_money" title="Pagar conta" class="attach-money" />
       </div>
       <div class="option">
-        <q-btn flat round icon="open_in_new" title="Ver parcelas" class="open-in-new" />
+        <QBtn flat round icon="open_in_new" title="Ver parcelas" class="open-in-new" />
       </div>
     </div>
   </div>
@@ -59,4 +59,3 @@ defineProps<Props>();
   color: $grey;
 }
 </style>
-../src/utils

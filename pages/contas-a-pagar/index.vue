@@ -43,7 +43,7 @@ useHead({
     </main>
     <Navbar />
     <NuxtLink to="/contas-a-pagar/cadastro">
-      <q-btn flat round icon="add" title="Adicionar nova conta" class="add-bill-button" />
+      <QBtn flat round icon="add" title="Adicionar nova conta" class="add-bill-button" />
     </NuxtLink>
   </div>
 </template>
@@ -71,7 +71,7 @@ useHead({
 }
 
 .add-bill-button {
-  background-color: $green !important;
+  background-color: $green;
   border-radius: 100%;
   bottom: 64px;
   padding: 12px;

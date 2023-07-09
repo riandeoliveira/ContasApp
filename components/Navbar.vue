@@ -2,16 +2,18 @@
   <nav class="nav">
     <ul class="list">
       <li>
-        <q-btn flat round icon="money_off" title="Contas a Pagar" class="button" />
+        <NuxtLink to="/contas-a-pagar">
+          <QBtn flat round icon="money_off" title="Contas a Pagar" class="button" />
+        </NuxtLink>
       </li>
       <li>
-        <q-btn flat round icon="attach_money" title="Contas a Receber" class="button" />
+        <QBtn flat round icon="attach_money" title="Contas a Receber" class="button" />
       </li>
       <li>
-        <q-btn flat round icon="dashboard" title="Dashboard" class="button" />
+        <QBtn flat round icon="dashboard" title="Dashboard" class="button" />
       </li>
       <li>
-        <q-btn flat round icon="person" title="Usuário" class="button" />
+        <QBtn flat round icon="person" title="Usuário" class="button" />
       </li>
     </ul>
   </nav>

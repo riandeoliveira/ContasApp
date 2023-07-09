@@ -10,7 +10,20 @@
   text-decoration: none;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: normal;
   line-height: normal;
+}
+
+.q-field__control {
+  color: $green;
+}
+
+.q-select__dialog {
+  height: 300px;
 }
