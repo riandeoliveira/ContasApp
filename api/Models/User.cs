@@ -4,9 +4,6 @@ using ContasApp.Bases;
 
 namespace ContasApp.Models;
 
-// TODO: Fazer validação de senha forte
-// TODO: Fazer validação de campo único
-
 [Table("users")]
 public sealed class User : ModelBase
 {
