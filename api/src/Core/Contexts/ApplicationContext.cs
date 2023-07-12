@@ -1,7 +1,7 @@
-using ContasApp.Models;
+using ContasApp.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ContasApp.Contexts;
+namespace ContasApp.Core.Contexts;
 
 public sealed class ApplicationContext : DbContext
 {
