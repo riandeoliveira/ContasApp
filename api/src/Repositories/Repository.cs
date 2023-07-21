@@ -1,6 +1,5 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using ContasApp.Bases;
+using ContasApp.Contracts;
 using ContasApp.Core.Contexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,11 +11,11 @@ public sealed class Repository<T> : IRepository<T> where T : ModelBase
 
     public Repository(ApplicationContext applicationContext)
     {
-        this._applicationContext = applicationContext;
+        _applicationContext = applicationContext;
     }
 
     public async Task<IList<T>> FindAllAsync()
     {
-        return await this._applicationContext.Set<T>().ToListAsync();
+        return await _applicationContext.Set<T>().ToListAsync();
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,8 +26,8 @@ public abstract class ModelBase
 
     protected ModelBase()
     {
-        this.Id = Guid.NewGuid();
-        this.IsActive = true;
-        this.CreatedAt = DateTime.Now;
+        Id = Guid.NewGuid();
+        IsActive = true;
+        CreatedAt = DateTime.Now;
     }
 }

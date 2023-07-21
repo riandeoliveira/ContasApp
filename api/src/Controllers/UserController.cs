@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContasApp.Controllers;
@@ -7,5 +9,9 @@ namespace ContasApp.Controllers;
 [ApiController]
 public class UserController : ControllerBase
 {
-
+    [HttpGet]
+    public Task<IList>? FindAll()
+    {
+        return null;
+    }
 }

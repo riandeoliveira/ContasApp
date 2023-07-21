@@ -1,9 +1,9 @@
+using ContasApp.Contracts;
 using ContasApp.Core.Contexts;
-using Microsoft.AspNetCore.Builder;
+using ContasApp.Core.Models;
+using ContasApp.Repositories;
+using ContasApp.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite(connectionString));
+
+
+builder.Services.AddHostedService<UserService>();
+builder.Services.AddScoped<IRepository<User>, Repository<User>>();
+
 
 WebApplication app = builder.Build();
 

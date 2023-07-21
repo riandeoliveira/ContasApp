@@ -1,0 +1,5 @@
+{
+  "dotnet.defaultSolution": "ContasApp.sln",
+  "omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.enableEditorConfigSupport": true
+}
